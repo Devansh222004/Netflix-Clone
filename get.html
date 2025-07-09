@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="get.css" />
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+  <script src="watchlist.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="nav" class="nav">
+    <img class="nav__logo" src="https://wallpapers.com/images/hd/netflix-logo-redon-black-l2sdc7dpfo35m127.png" alt="Netflix Logo" />
+    <div style="display: flex; align-items: center; gap: 20px;">
+      <img class="nav__avatar" src="avatar.png" alt="" />
+      <a href="watchlist.html" style="color:white; text-decoration: none;">Watchlist ❤️</a>
+      <button onclick="logout()" style="background-color: red; color: white; border: none; padding: 5px 10px; cursor: pointer;">
+        Logout
+      </button>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <header class="banner">
+    <div class="banner__contents">
+      <h1 class="banner__title">Money Heist</h1>
+      <div class="banner__buttons">
+        <button class="banner__button">Play</button>
+        <button class="banner__button">My List</button>
+      </div>
+      <h1 class="banner__description">
+        To carry out the biggest heist in history, a mysterious man called The Professor recruits
+        a band of eight robbers who have a single characteristic: n...
+      </h1>
+    </div>
+    <div class="banner--fadeBottom"></div>
+  </header>
+
+  <!-- Search Input -->
+  <div style="text-align:center; padding: 20px;">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search Movies..."
+      style="padding: 10px; width: 50%; font-size: 1rem;"
+    />
+  </div>
+
+  <!-- Movie Rows -->
+  <div id="main-content"></div>
+</body>
+</html>
